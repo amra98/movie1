@@ -6,10 +6,10 @@ import { MoviesComponent } from './movies/movies.component';
 
 //hapi 1 krijimi i rootave per login dashboard fhe movies
 const routes: Routes = [
-  {path:'', redirectTo:'dashboard',pathMatch:'full'},
+  {path:'', redirectTo:'dashborard',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'movies',component:MoviesComponent},
-  {path:'dashboard',component:DashborardComponent},
+  {path:'dashborard',component:DashborardComponent},
 
 ];
 
