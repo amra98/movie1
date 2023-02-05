@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <form class="login">
+                <div class="login__field">
+                    <i class="login__icon fas fa-user"></i>
+                    <!-- hapi 5.1 ngmodel username-->
+                    <input type="text" [(ngModel)]='username' [ngModelOptions]="{standalone: true}"
+                    class="login__input" placeholder="User name / Email">
+                </div>
+                <div class="login__field">
+                    <i class="login__icon fas fa-lock"></i>
+                                        <!-- hapi 5.2 ngmodel password-->
+
+                    <input type="password" [(ngModel)]='password' [ngModelOptions]="{standalone: true}"
+                    class="login__input" placeholder="Password">
+                </div>
+                <!-- hapi 5.3 ngmodel password-->
+                <button class="button login__submit" (click)="login()">
+                    <span class="button__text">Log In Now</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>               
+            </form>
+            <div class="social-login">
+                <h3>log in via</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-login__icon fab fa-instagram"></a>
+                    <a href="#" class="social-login__icon fab fa-facebook"></a>
+                    <a href="#" class="social-login__icon fab fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>      
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>      
+    </div>
+</div>
